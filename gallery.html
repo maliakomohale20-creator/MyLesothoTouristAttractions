@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesotho Tourism - Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg my-navbar">
+      <div class="container">
+        <a class="logo" href="index.html">LESOTHO<small>TOURISM</small></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Open menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services/Products</a></li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <button id="themeButton" class="theme-button">Light</button>
+        </div>
+      </div>
+    </nav>
+    <div class="page-banner">
+      <h1>Gallery</h1>
+      <p> Moments from the Highlands </p>
+    </div>
+  </header>
+
+  <main class="container mt-4">
+    <h2>Photo Gallery</h2>
+
+    <div class="row g-2 mb-3">
+      <div class="col-12 col-md-4">
+        <input type="search" id="searchBox" class="form-control" placeholder="Search gallery..." aria-label="Search gallery">
+      </div>
+      <div class="col-12 col-md-8">
+        <button class="filter-button active" data-filter="All">All</button>
+        <button class="filter-button" data-filter="Mountains">Mountains</button>
+        <button class="filter-button" data-filter="Culture">Culture</button>
+        <button class="filter-button" data-filter="Adventure">Adventure</button>
+        <button class="filter-button" data-filter="People">People</button>
+      </div>
+    </div>
+
+    <section>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-lg-4 item" data-category="Mountains">
+          <figure class="my-card text-center mb-0">
+            <img src="hikers.jpg" class="card-picture gallery-picture" data-title="Maluti Mountains at dawn" alt="Hikers in the Maluti Mountains">
+            <figcaption class="fw-semibold mt-2">Maluti Mountains at dawn</figcaption>
+            <span class="badge bg-primary">Mountains</span>
+          </figure>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 item" data-category="Adventure">
+          <figure class="my-card text-center mb-0">
+            <img src="Maletsunyane.webp" class="card-picture gallery-picture" data-title="Maletsunyane Falls - 192m single drop" alt="Maletsunyane Falls">
+            <figcaption class="fw-semibold mt-2">Maletsunyane Falls- 192m drop</figcaption>
+            <span class="badge bg-primary">Adventure</span>
+          </figure>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 item" data-category="Culture">
+          <figure class="my-card text-center mb-0">
+            <img src="trek.jpg" class="card-picture gallery-picture" data-title="Pony Trekking on the ridge" alt="Pony trekking on a mountain ridge">
+            <figcaption class="fw-semibold mt-2">Pony Trekking on the ridge</figcaption>
+            <span class="badge bg-primary">Culture</span>
+          </figure>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 item" data-category="Adventure">
+          <figure class="my-card text-center mb-0">
+            <img src="vilage.jpg" class="card-picture gallery-picture" data-title="Mountain village in Mokhotlong" alt="4x4 vehicle in the mountains">
+            <figcaption class="fw-semibold mt-2">Mountain village in Mokhotlong</figcaption>
+            <span class="badge bg-primary">Adventure</span>
+          </figure>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 item" data-category="Culture People">
+          <figure class="my-card text-center mb-0">
+            <img src="weaving.jpg" class="card-picture gallery-picture" data-title="Weaving workshop in Maseru" alt="Woman weaving on a loom">
+            <figcaption class="fw-semibold mt-2">Weaving workshop in Maseru</figcaption>
+            <span class="badge bg-primary">Culture &bull; People</span>
+          </figure>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 item" data-category="Mountains">
+          <figure class="my-card text-center mb-0">
+          <img src="katsedam.jpg" class="card-picture gallery-picture" data-title="Katse Dam view" alt="Katse Dam in Lesotho">
+          <figcaption class="fw-semibold mt-2">Katse Dam view</figcaption>
+          <span class="badge bg-primary">Mountains</span>
+        </figure>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 item" data-category="Mountains">
+        <figure class="my-card text-center mb-0">
+          <img src="sanipassmoto.webp" class="card-picture gallery-picture" data-title="Sani Pass - Roof of Africa" alt="Winding road at Sani Pass">
+          <figcaption class="fw-semibold mt-2">Sani Pass - Roof of Africa</figcaption>
+          <span class="badge bg-primary">Mountains</span>
+        </figure>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 item" data-category="Adventure">
+        <figure class="my-card text-center mb-0">
+          <img src="snowboarding.jpg" class="card-picture gallery-picture" data-title="Afriski Mountain Resort" alt="Skiing at Afriski Lesotho">
+          <figcaption class="fw-semibold mt-2">Afriski Mountain Resort</figcaption>
+          <span class="badge bg-primary">Adventure</span>
+        </figure>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 item" data-category="Adventure">
+        <figure class="my-card text-center mb-0">
+          <img src="abseiling.jpg" class="card-picture gallery-picture" data-title="Abseiling at Maletsunyane" alt="Abseiling down a cliff">
+          <figcaption class="fw-semibold mt-2">Abseiling at Maletsunyane</figcaption>
+          <span class="badge bg-primary">Adventure</span>
+        </figure>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 item" data-category="Culture">
+        <figure class="my-card text-center mb-0">
+          <img src="thababosiu.avif" class="card-picture gallery-picture" data-title="Thaba Bosiu - Fortress of Basotho" alt="Thaba Bosiu plateau">
+          <figcaption class="fw-semibold mt-2">Thaba Bosiu - Fortress</figcaption>
+          <span class="badge bg-primary">Culture</span>
+        </figure>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 item" data-category="Culture People">
+        <figure class="my-card text-center mb-0">
+          <img src="basotho.webp" class="card-picture gallery-picture" data-title="Basotho blanket - Heritage" alt="Basotho wearing traditional blanket">
+          <figcaption class="fw-semibold mt-2">Basotho blanket - Heritage</figcaption>
+          <span class="badge bg-primary">Culture &bull; People</span>
+        </figure>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 item" data-category="Adventure">
+        <figure class="my-card text-center mb-0">
+          <img src="fishing.jpg" class="card-picture gallery-picture" data-title="Trout fishing in Lesotho Highlands" alt="Fishing in Mohale Dam">
+          <figcaption class="fw-semibold mt-2">Trout fishing - Lesotho Highlands</figcaption>
+          <span class="badge bg-primary">Adventure</span>
+        </figure>
+      </div>
+
+
+      </div>
+    </section>
+
+    <article class="info-box mt-4">
+      <h2 class="h4">Highland Photography</h2>
+      <p>Photos captured by our local guides and visitors. Share your own with #LesothoHighlands.</p>
+    </article>
+  </main>
+
+
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="bigTitle" style="text-transform:none;"></h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="bigPicture" src="" class="img-fluid rounded" alt="Big picture">
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button class="outline-button" id="previousButton">&larr; Previous</button>
+          <a class="outline-button text-decoration-none" id="downloadLink" href="" download>Download</a>
+          <button class="blue-button" id="shareButton">Share</button>
+          <button class="outline-button" id="nextButton">Next &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-bottom">@2026 The kingdom in the sky</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
